@@ -4,3 +4,5 @@ def season():
         print("winter")
     elif s >= 3 and s <= 5:
         print("spring")
+    elif s >= 6 and s <= 8:
+        print("summer")
