@@ -4,3 +4,9 @@ def season():
         print("winter")
     elif s >= 3 and s <= 5:
         print("spring")
+    elif s >= 9 and s <= 11:
+        print("autumn")
+    else:
+        print("NOT FOUND")
+        season()
+    season()
