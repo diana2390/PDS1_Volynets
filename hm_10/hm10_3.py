@@ -13,4 +13,4 @@ class MyCustomError(Exception):
             return 'MyCustomError has been raised'
 
 
-# raise MyCustomError("Something goes wrong:(")
+raise MyCustomError("Something goes wrong:(")
