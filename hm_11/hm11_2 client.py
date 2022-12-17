@@ -1,6 +1,6 @@
 import socket
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(("localhost", 54000))
+client.connect(("localhost", 53000))
 while True:
     c = input("Client: ").encode()
     client.send(c)

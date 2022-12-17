@@ -1,6 +1,6 @@
 import socket
 new_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-new_socket.bind(('', 54000))
+new_socket.bind(('', 53000))
 new_socket.listen(10)
 print("Server is running")
 conn, addr = new_socket.accept()
