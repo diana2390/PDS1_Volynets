@@ -29,6 +29,7 @@ if __name__=="__main__":
 
     time_res2 = finish2 - start2
     print(f"ProcessPoolExecutor finished in {time_res2}second(s)")
+
 # Compare the time
     if time_res1 < time_res2:
         print(f"ThreadPoolExecutor is faster. Difference is {time_res2 - time_res1}")
