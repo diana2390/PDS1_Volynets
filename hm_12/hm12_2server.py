@@ -25,7 +25,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as ser:
 
         loop = asyncio.get_event_loop()
         tasks = [loop.create_task(plus(num_list)),loop.create_task(minus(num_list)), loop.create_task(multi(num_list))]
-        loop.run_until_complete(wait_tasks)
+        loop.run_until_complete(asyncio.wait(tasks))
 
         results = f"Addition is: {tasks[0].result()};\n" \
                   f'Subtraction values is {tasks[1].result()};\n' \
