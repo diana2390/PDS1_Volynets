@@ -31,4 +31,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as ser:
                   f'Subtraction values is {tasks[1].result()};\n' \
                   f'Multiplication values is {tasks[2].result()}.'
 
-        conn.send(message.encode())
+        conn.send(results.encode())
