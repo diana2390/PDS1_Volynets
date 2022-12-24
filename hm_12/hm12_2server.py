@@ -18,10 +18,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as ser:
             return pl_num
         async def minus(nums):
             mn_num = nums[0] + nums[1]
-            return pl_mn
+            return mn_num
         async def multi(nums):
             mul_num = nums[0] + nums[1]
-            return pl_mul
+            return mul_num
 
         loop = asyncio.get_event_loop()
         tasks = [loop.create_task(plus(num_list)),loop.create_task(minus(num_list)), loop.create_task(multi(num_list))]
