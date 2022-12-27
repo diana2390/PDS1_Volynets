@@ -65,6 +65,6 @@ def partition(nums, low, high):
     _quick_sort(nums, 0, len(nums) - 1)
 
 cur_time = time.time()
-quick_sort(int_list)
+_quick_sort(int_list)
 print(f"Quick Sort: {int_list}")
 print(f"Durations time: {time.time() - cur_time}")

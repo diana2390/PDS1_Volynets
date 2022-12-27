@@ -33,5 +33,5 @@ if __name__=="__main__":
 # Compare the time
     if time_res1 < time_res2:
         print(f"ThreadPoolExecutor is faster. Difference is {time_res2 - time_res1}")
-    if time_res2 < time_res1:
+    elif time_res2 < time_res1:
         print(f"ProcessPoolExecutor is faster. Difference is {time_res1 - time_res2}" )
