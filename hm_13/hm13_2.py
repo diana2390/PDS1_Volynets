@@ -28,7 +28,8 @@ def bubble_sort(list, iter):
         finish = time.perf_counter()
         cur_time = finish - start
         total_time.append(cur_time)
-    print(f"Duration Bubble time: {sum(total_time) / len(total_time)} sec.")
+    print(f"Duration Bubble Sorting time: {sum(total_time) / len(total_time)} sec.")
+
 bubble_sort(int_list, 10)
 bubble_sort(float_list, 10)
 bubble_sort(str_list, 10)
